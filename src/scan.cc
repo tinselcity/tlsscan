@@ -141,6 +141,7 @@ int32_t scan_host(const host_info& a_host_info,
                 ANSI_COLOR_FG_GREEN, a_host_info.m_host.c_str(), ANSI_COLOR_OFF,
                 ANSI_COLOR_FG_GREEN, a_scan_opt.m_port, ANSI_COLOR_OFF,
                 ANSI_COLOR_FG_GREEN, a_host_info.m_host.c_str(), ANSI_COLOR_OFF);
+
         // -------------------------------------------------
         // check protocols
         // -------------------------------------------------
@@ -210,7 +211,7 @@ int32_t scan_host(const host_info& a_host_info,
                 l_s = check_fallback(a_host_info, PROTOCOL_NONE);
                 if(l_s != STATUS_OK)
                 {
-                        return STATUS_ERROR;
+                        //return STATUS_ERROR;
                 }
         }
         // -------------------------------------------------
@@ -223,7 +224,7 @@ int32_t scan_host(const host_info& a_host_info,
                 l_s = check_reneg(a_host_info);
                 if(l_s != STATUS_OK)
                 {
-                        return STATUS_ERROR;
+                        //return STATUS_ERROR;
                 }
         }
         // -------------------------------------------------
@@ -236,7 +237,7 @@ int32_t scan_host(const host_info& a_host_info,
                 l_s = check_compression(a_host_info);
                 if(l_s != STATUS_OK)
                 {
-                        return STATUS_ERROR;
+                        //return STATUS_ERROR;
                 }
         }
         // -------------------------------------------------
